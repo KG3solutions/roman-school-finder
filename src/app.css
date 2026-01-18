@@ -1,0 +1,48 @@
+@import 'tailwindcss';
+
+/* Mapbox GL styles */
+@import 'mapbox-gl/dist/mapbox-gl.css';
+
+/* Custom design tokens */
+@theme {
+	--color-school-zoned: #3b82f6;
+	--color-school-magnet: #8b5cf6;
+	--color-school-charter: #f97316;
+}
+
+/* Base styles */
+html {
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	min-height: 100vh;
+}
+
+/* Mapbox popup customization */
+.mapboxgl-popup-content {
+	padding: 0.75rem 1rem;
+	font-size: 0.875rem;
+	border-radius: 8px;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.mapboxgl-popup-close-button {
+	font-size: 1.25rem;
+	padding: 0.25rem 0.5rem;
+}
+
+/* School type badges */
+.badge-zoned {
+	background-color: var(--color-school-zoned);
+}
+
+.badge-magnet {
+	background-color: var(--color-school-magnet);
+}
+
+.badge-charter {
+	background-color: var(--color-school-charter);
+}

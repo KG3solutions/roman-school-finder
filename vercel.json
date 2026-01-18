@@ -1,0 +1,12 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": "sveltekit",
+  "regions": ["iad1"],
+  "build": {
+    "env": {
+      "PUBLIC_SUPABASE_URL": "@supabase-url",
+      "PUBLIC_SUPABASE_ANON_KEY": "@supabase-anon-key",
+      "PUBLIC_MAPBOX_TOKEN": "@mapbox-token"
+    }
+  }
+}
